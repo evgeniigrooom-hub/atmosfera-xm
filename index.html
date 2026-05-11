@@ -6,7 +6,7 @@
     <title>Atmosfera XM | Связь</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --dark: #081C2E; --gold: #C69A4C; --tg-blue: #2481cc; --max-green: #00b140; }
+        :root { --dark: #081C2E; --gold: #C69A4C; --tg-blue: #2481cc; --max-color: #5d5fef; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', sans-serif; background: var(--dark); color: white; text-align: center; min-height: 100vh; display: flex; flex-direction: column; }
         header { padding: 20px; border-bottom: 1px solid var(--gold); }
@@ -16,10 +16,10 @@
         .contact-card { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 18px; border: 1px solid rgba(198,154,76,0.4); margin-bottom: 20px; width: 100%; max-width: 340px; }
         .phone-num { display: block; font-size: 20px; font-weight: bold; color: var(--gold); margin-bottom: 15px; text-decoration: none; }
         .btn-row { display: flex; gap: 10px; }
-        .btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 5px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 13px; color: white; transition: 0.2s; }
+        .btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 5px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 12px; color: white; transition: 0.2s; text-transform: uppercase; }
         .btn-tg { background: var(--tg-blue); }
-        .btn-max { background: var(--max-green); }
-        .btn:active { transform: scale(0.95); }
+        .btn-max { background: var(--max-color); }
+        .btn:hover { filter: brightness(1.2); transform: translateY(-2px); }
         footer { padding: 20px; opacity: 0.5; font-size: 12px; }
     </style>
 </head>
@@ -28,7 +28,7 @@
     <header>
         <div class="logo-box">
             <img src="logo.png" alt="Logo">
-            <span style="color:var(--gold); font-weight:bold; text-transform:uppercase;">Atmosfera XM</span>
+            <span style="color:var(--gold); font-weight:bold;">ATMOSFERA XM</span>
         </div>
     </header>
 
@@ -39,7 +39,7 @@
                 <a href="https://t.me/+79384356588" target="_blank" class="btn btn-tg">
                     <i class="fab fa-telegram-plane"></i> TELEGRAM
                 </a>
-                <a href="im:chat?jid=79384356588" class="btn btn-max">
+                <a href="https://max.ru/u/f9LHodD0cOLrSVoXatsW2OO2oqVHK40FFUOZ_x4ywdA5XPIcgsbCeRgs1X8" target="_blank" class="btn btn-max">
                     <i class="fas fa-comment"></i> MAX
                 </a>
             </div>
@@ -51,7 +51,7 @@
                 <a href="https://t.me/+79022733569" target="_blank" class="btn btn-tg">
                     <i class="fab fa-telegram-plane"></i> TELEGRAM
                 </a>
-                <a href="im:chat?jid=79022733569" class="btn btn-max">
+                <a href="https://max.ru/u/f9LHodD0cOLrSVoXatsW2OO2oqVHK40FFUOZ_x4ywdA5XPIcgsbCeRgs1X8" target="_blank" class="btn btn-max">
                     <i class="fas fa-comment"></i> MAX
                 </a>
             </div>
