@@ -3,61 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atmosfera XM | Апартаменты в Ханты-Мансийске</title>
+    <title>Atmosfera XM | Связь</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --dark: #081C2E; --gold: #C69A4C; --blue: #0078D4; }
+        :root { --dark: #081C2E; --gold: #C69A4C; --tg-blue: #2481cc; --max-green: #00b140; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', sans-serif; background: var(--dark); color: white; text-align: center; min-height: 100vh; display: flex; flex-direction: column; }
-        header { padding: 15px; border-bottom: 1px solid var(--gold); background: var(--dark); }
-        .logo-box { display: flex; align-items: center; justify-content: center; gap: 15px; }
-        .logo-box img { height: 50px; width: auto; }
-        .logo-text { color: var(--gold); font-size: 22px; font-weight: bold; text-transform: uppercase; }
-        .hero { flex-grow: 1; padding: 40px 20px; background: linear-gradient(rgba(8,28,46,0.85), rgba(8,28,46,0.85)), url('https://images.unsplash.com/photo-1522770179533-24471fcdba45?auto=format&fit=crop&w=1350&q=80') center/cover; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-        h1 span { color: var(--gold); }
-        .contact-group { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border: 1px solid rgba(198,154,76,0.3); margin-bottom: 20px; width: 100%; max-width: 350px; }
-        .num-title { color: var(--gold); font-weight: bold; margin-bottom: 15px; display: block; font-size: 18px; }
-        .btn-row { display: flex; gap: 10px; justify-content: center; }
-        .btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 10px; text-decoration: none; border-radius: 10px; font-weight: bold; transition: 0.3s; font-size: 13px; color: white; text-transform: uppercase; }
-        .btn-tg { background: var(--gold); }
-        .btn-max { background: var(--blue); }
-        .btn:hover { transform: scale(1.05); filter: brightness(1.1); }
-        footer { padding: 30px; background: var(--dark); border-top: 1px solid rgba(198,154,76,0.2); }
-        .phone-link { color: var(--gold); text-decoration: none; font-size: 18px; font-weight: bold; display: block; margin: 5px 0; }
+        header { padding: 20px; border-bottom: 1px solid var(--gold); }
+        .logo-box { display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .logo-box img { height: 40px; width: auto; }
+        .hero { flex-grow: 1; padding: 30px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .contact-card { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 18px; border: 1px solid rgba(198,154,76,0.4); margin-bottom: 20px; width: 100%; max-width: 340px; }
+        .phone-num { display: block; font-size: 20px; font-weight: bold; color: var(--gold); margin-bottom: 15px; text-decoration: none; }
+        .btn-row { display: flex; gap: 10px; }
+        .btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 5px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 13px; color: white; transition: 0.2s; }
+        .btn-tg { background: var(--tg-blue); }
+        .btn-max { background: var(--max-green); }
+        .btn:active { transform: scale(0.95); }
+        footer { padding: 20px; opacity: 0.5; font-size: 12px; }
     </style>
 </head>
 <body>
+
     <header>
         <div class="logo-box">
-            <img src="logo.png" alt="Atmosfera XM">
-            <div class="logo-text">ATMOSFERA XM</div>
+            <img src="logo.png" alt="Logo">
+            <span style="color:var(--gold); font-weight:bold; text-transform:uppercase;">Atmosfera XM</span>
         </div>
     </header>
 
     <section class="hero">
-        <h1 style="margin-bottom:30px;"><span>ATMOSFERA</span> XM</h1>
-        
-        <div class="contact-group">
-            <span class="num-title">+7 (938) 435-65-88</span>
+        <div class="contact-card">
+            <a href="tel:+79384356588" class="phone-num">+7 (938) 435-65-88</a>
             <div class="btn-row">
-                <a href="https://t.me/+79384356588" target="_blank" class="btn btn-tg"><i class="fab fa-telegram-plane"></i> TG</a>
-                <a href="https://t.me/+79384356588" target="_blank" class="btn btn-max"><i class="fas fa-calendar-check"></i> MAX</a>
+                <a href="https://t.me/+79384356588" target="_blank" class="btn btn-tg">
+                    <i class="fab fa-telegram-plane"></i> TELEGRAM
+                </a>
+                <a href="im:chat?jid=79384356588" class="btn btn-max">
+                    <i class="fas fa-comment"></i> MAX
+                </a>
             </div>
         </div>
 
-        <div class="contact-group">
-            <span class="num-title">+7 (902) 273-35-69</span>
+        <div class="contact-card">
+            <a href="tel:+79022733569" class="phone-num">+7 (902) 273-35-69</a>
             <div class="btn-row">
-                <a href="https://t.me/+79022733569" target="_blank" class="btn btn-tg"><i class="fab fa-telegram-plane"></i> TG</a>
-                <a href="https://t.me/+79022733569" target="_blank" class="btn btn-max"><i class="fas fa-calendar-check"></i> MAX</a>
+                <a href="https://t.me/+79022733569" target="_blank" class="btn btn-tg">
+                    <i class="fab fa-telegram-plane"></i> TELEGRAM
+                </a>
+                <a href="im:chat?jid=79022733569" class="btn btn-max">
+                    <i class="fas fa-comment"></i> MAX
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p style="opacity:0.7; font-size:14px; margin-bottom:10px;">Нажмите на номер, чтобы позвонить:</p>
-        <a href="tel:+79384356588" class="phone-link">+7 (938) 435-65-88</a>
-        <a href="tel:+79022733569" class="phone-link">+7 (902) 273-35-69</a>
+        © 2024 Atmosfera XM
     </footer>
+
 </body>
 </html>
